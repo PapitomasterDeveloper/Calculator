@@ -1,6 +1,6 @@
 {
   "name": "calculator-modules",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Example of modules of arithmetic procedures",
   "main": "build/index.js",
   "scripts": {
