@@ -1,5 +1,5 @@
 {
-  "name": "calculator",
+  "name": "calculator-modules",
   "version": "1.0.0",
   "description": "Example of modules of arithmetic procedures",
   "main": "build/index.js",
@@ -7,7 +7,9 @@
     "dev": "watch 'npm run build' src",
     "build": "babel src -d build",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
   },
   "babel": {
     "presets": [
@@ -40,6 +42,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "jest": "^23.6.0",
+    "np": "^3.0.4",
     "watch": "^1.0.2"
   }
 }
